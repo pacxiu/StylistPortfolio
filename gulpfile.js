@@ -31,14 +31,19 @@ gulp.task('css', function() {
               console.log(e);
         }))
         .pipe(autoprefixer())
-        .pipe(gulp.dest(sourcePATH + 'css'));
+        .pipe(gulp.dest(sourcePATH + 'css'))
+        .pipe(sourcemaps.init())
+        .pipe(cleanCSS())
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('dist/css'));
 
-    gulp.src(sourcePATH + 'css/*.css')
+    gulp.src(sourcePATH + 'css/normalize.css')
         .pipe(sourcemaps.init())
         .pipe(cleanCSS())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('dist/css'));
 })
+
 
 
 //task for browser sync
