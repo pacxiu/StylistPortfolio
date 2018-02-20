@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="" />
+        <meta name="description" content="<?php echo $pageDescription; ?>" />
         <meta name="keywords" content="">
-        <title>Site Title</title>
+        <title><?php echo $pageTitle; ?></title>
 
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="<?php echo $assets; ?>/dist/css/normalize.css">

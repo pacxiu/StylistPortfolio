@@ -1,4 +1,7 @@
-<?php require_once './config.php'; ?>
+<?php require_once './config.php'; 
+	$pageTitle = "Test page Title";
+	$pageDescription = "Test page description";
+?>
 
 <?php require_once $root.$files.'/partials/header.php'; ?>
 
