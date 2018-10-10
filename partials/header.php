@@ -29,7 +29,6 @@
         <nav id="menu">        
             <div class="language">
                 <a href="" class="is-active">PL</a>
-                <a href="<?php echo $urlEn?>" class="">ENG</a>
             </div>
         </nav>
 
