@@ -1,5 +1,5 @@
-*{
-  font-family: 'Open Sans', sans-serif;
+* {
+  font-family: 'Montserrat', sans-serif;
   color: $font-color
 }
 
@@ -9,6 +9,8 @@ html, body {
   margin: 0px;
   padding: 0px;
   color: $font-color;
+  font-size: 1.8rem;
+  font-weight: 300;
 }
 
 a, a:hover, a:active, a:visited, a:focus{

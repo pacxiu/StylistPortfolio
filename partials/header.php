@@ -19,7 +19,7 @@
     <link rel="icon" type="image/png" href="<?php echo $assets; ?>/img/favicon.png" sizes="32x32">
 
     <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
 
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -30,6 +30,7 @@
       <a href="./experiance.php">Experiance</a>
       <a href="./contact.php">Contact</a>
     </nav>
+    
 
         
         

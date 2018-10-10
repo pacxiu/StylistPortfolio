@@ -1,13 +1,15 @@
 * {
-  font-family: 'Open Sans', sans-serif;
-  color: black; }
+  font-family: 'Montserrat', sans-serif;
+  color: #000; }
 
 html, body {
   position: relative;
   height: 100%;
   margin: 0px;
   padding: 0px;
-  color: black; }
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 300; }
 
 a, a:hover, a:active, a:visited, a:focus {
   text-decoration: none; }
@@ -16,14 +18,25 @@ p {
   padding: 0px;
   margin: 0px; }
 
+.full-height-container {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 html {
   font-size: 10px; }
   @media screen and (min-width: 1680px) {
     html {
       font-size: 12px; } }
-
-p {
-  background: pink;
-  color: #e1c184;
-  height: 100px;
-  width: 100px; }
