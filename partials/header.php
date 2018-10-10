@@ -26,6 +26,7 @@
     </head>
     <body>
         
+        <?php echo $mainFolder ?>
         <nav id="menu">        
             <div class="language">
                 <a href="" class="is-active">PL</a>

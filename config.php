@@ -1,8 +1,14 @@
 <?php
 	//========== SETTINGS ==========//
 	// SET main folder name
-	$mainFolder = 'SylwiaPortfolio';
-
+  $serverName = $_SERVER['SERVER_NAME'];
+  $mainFolder = 'SylwiaPortfolio';
+  
+  // check if in production
+  if ($serverName !== 'localhost') {
+    $mainFolder = '';
+  }
+	
   //========== END SETTINGS ==========//
 
 	// get file name from url and strip extension
