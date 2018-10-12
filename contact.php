@@ -8,7 +8,7 @@
 <div class="full-height-container">
   <div class="contact-container">
     <h1 class="contact-title">Sylwia Morawska / Fashion&nbsp;Stylist</h1>
-    <ul class="contact-data">
+    <ul class="contact-data dot-list">
       <li>e-mail: <a href="mailto:stylist@smorawska.pl" class="u-bold">stylist@smorawska.pl</a></li>
       <li>telephone: +48 534213932 </li>
     </ul>

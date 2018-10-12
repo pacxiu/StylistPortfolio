@@ -1,8 +1,9 @@
 .full-height-container
-  width: 100%
-  min-height: 100vh
+  width: calc(100% - 2 * #{$sidebar-width}
+  min-height: calc(100vh - #{$navbar-height}
   height: 100%
-  padding: 2rem
+  margin: 0 auto
+  padding: $navbar-height 2rem 2rem
   display: flex
   justify-content: center
   align-items: center

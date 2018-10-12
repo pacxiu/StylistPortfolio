@@ -25,10 +25,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </head>
   <body>
-    <nav id="menu">        
-      <a href="./portfolio.php">Portfolio</a>
-      <a href="./experiance.php">Experiance</a>
-      <a href="./contact.php">Contact</a>
+    <nav id="menu">
+      <div class="logotype-container">
+        <p class="logotype">Sylwia Morawska</p>
+      </div>
+      <ul class="menu-list">
+        <li class="menu-item"><a class="menu-link" href="./portfolio.php">Portfolio</a></li>
+        <li class="menu-item"><a class="menu-link" href="./experiance.php">Experiance</a></li>
+        <li class="menu-item positioned"><a class="menu-link" href="./contact.php">Contact</a></li>
+      </ul>
     </nav>
     
 
