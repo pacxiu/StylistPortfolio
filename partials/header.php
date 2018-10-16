@@ -25,14 +25,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </head>
   <body>
+    <div id="loader">
+      <div class="loader-container">Progressbar here</div>
+    </div>
     <nav id="menu">
       <div class="logotype-container">
-        <p class="logotype">Sylwia Morawska</p>
+        <p class="logotype">Sylwia Morawska Stylist</p>
       </div>
       <ul class="menu-list">
-        <li class="menu-item"><a class="menu-link" href="./portfolio.php">Portfolio</a></li>
-        <li class="menu-item"><a class="menu-link" href="./experiance.php">Experiance</a></li>
-        <li class="menu-item positioned"><a class="menu-link" href="./contact.php">Contact</a></li>
+        <li class="menu-item<?php if($pg=='index') { ?> active<?php } ?>"><a class="menu-link" href="./index.php">Portfolio</a></li>
+        <li class="menu-item<?php if($pg=='experiance') { ?> active<?php } ?>"><a class="menu-link" href="./experiance.php">Experiance</a></li>
+        <li class="menu-item positioned<?php if($pg=='contact') { ?> active<?php } ?>"><a class="menu-link" href="./contact.php">Contact</a></li>
       </ul>
     </nav>
     

@@ -41,6 +41,9 @@
 .error-hint
   color: red
   font-size: 0.8em
+  display: none
+
+.error-validate+.error-hint
   display: block
 
 .send-btn
@@ -65,3 +68,9 @@
 .send-btn-container
   display: flex
   justify-content: flex-end
+
+#sending, #thank-you, #error
+  display: none
+
+  &.is-visible
+    display: block

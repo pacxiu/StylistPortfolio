@@ -4,8 +4,8 @@
 		<script type="text/javascript">
 		
 			$(document).ready( function() {
-				<?php if($pg=='index') { ?>
-					IndexModule.init();
+				<?php if($pg=='contact') { ?>
+					ContactModule.init();
 				<?php } ?>
 			});
 			
