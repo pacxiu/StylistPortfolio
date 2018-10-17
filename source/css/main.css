@@ -174,7 +174,8 @@ html {
       flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  width: 100%; }
 
 .portfolio-item {
   position: relative;
@@ -212,6 +213,24 @@ html {
 @media screen and (max-width: 1366px) {
   .portfolio-item {
     width: 18.72%; } }
+
+.project-container {
+  width: 100%;
+  height: 100%; }
+
+.project-slider, .slick-list, .slick-track {
+  height: 100%; }
+
+.project-slide {
+  outline: none; }
+
+.project-image {
+  max-height: 100%;
+  max-width: 99.5%;
+  margin: 0 auto; }
+
+.project-description {
+  min-width: 20em; }
 
 #loader {
   position: fixed;
@@ -253,7 +272,8 @@ html {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  z-index: 10; }
 
 .menu-list {
   display: -webkit-box;

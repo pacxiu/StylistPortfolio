@@ -7,6 +7,9 @@
 				<?php if($pg=='contact') { ?>
 					ContactModule.init();
 				<?php } ?>
+        <?php if($pg=='project') { ?>
+          ProjectModule.init();
+        <?php } ?>
 			});
 			
 		</script>

@@ -8,13 +8,16 @@
   <div class="full-height-container" id="portfolio">
     <div class="portfolio-container">
       <?php
-        for($i = 1; $i <=20; $i++)
+        // display thumbnails for all projects
+        $directory = "./img/thumbnails/";
+        $filecount = count(glob($directory."*"));
+        for ($i = 1; $i <= $filecount; $i++)
         
         echo 
-        "<div class='portfolio-item'>
+        "<a href='$files/project.php?id=$i' class='portfolio-item'>
           <div class='portfolio-hint'>click to see project details</div>
-          <img src='$assets/img/thumbnails/project_1.jpg' >
-        </div>"
+          <img src='$assets/img/thumbnails/project_$i.jpg' >
+        </a>"
       ?>
     </div>
   </div>

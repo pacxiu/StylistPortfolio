@@ -1,5 +1,4 @@
 var MainModule = (function($) {
-	
 	var init = function init() {
 		console.log('Hello world');
 	};
@@ -110,6 +109,31 @@ var ContactModule = (function($) {
   return {
     init: init
   }
+})(jQuery);
+
+var ProjectModule = (function($) {
+  var _initSlider = function _initSlider() {
+    var slider = $('.project-slider');
+
+    slider.slick({
+      infinite: false,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      swipeToSlide: true,
+      variableWidth: true
+    })
+  }
+
+  var init = function init() {
+    _initSlider();
+  };
+
+  return {
+    init: init
+  }
+
 })(jQuery);
 
 (function($) {
