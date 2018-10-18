@@ -4,7 +4,8 @@ var MainModule = (function($) {
     var mobileMenu = $('.menu-list')
 
     menuTrigger.on('click', function() {
-      mobileMenu.toggleClass('is-open')
+      mobileMenu.toggleClass('is-open');
+      menuTrigger.toggleClass('is-open');
     })
   }
 

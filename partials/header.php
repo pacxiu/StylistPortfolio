@@ -30,7 +30,7 @@
     </div>
     <nav id="menu">
       <div class="logotype-container">
-        <p class="logotype">Sylwia Morawska Stylist</p>
+        <a class="logotype" href="./index.php">Sylwia Morawska Stylist</p>
       </div>
       <ul class="menu-list">
         <li class="menu-item<?php if($pg=='index') { ?> active<?php } ?>"><a class="menu-link" href="./index.php">Portfolio</a></li>
@@ -38,7 +38,9 @@
         <li class="menu-item positioned<?php if($pg=='contact') { ?> active<?php } ?>"><a class="menu-link" href="./contact.php">Contact</a></li>
       </ul>
       <div id="menu-trigger" class="js-menu-open">
-        Hamburger
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </nav>
     

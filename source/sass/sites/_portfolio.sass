@@ -16,6 +16,7 @@
 
   img
     width: 100%
+    display: block
 
   &:hover
     .portfolio-hint
@@ -45,3 +46,17 @@
 @media screen and (max-width: 1366px)
   .portfolio-item
     width: 18.72%
+
+@media #{$tablet-media}
+  .portfolio-item
+    width: 24%
+    margin: 0 0.5% 1%
+
+@media screen and (max-width: 609px)
+  .portfolio-item
+    width: 32%
+
+@media screen and (max-width: 459px)
+  .portfolio-item
+    width: 49%
+
