@@ -1,27 +1,27 @@
 .full-height-container
-  width: calc(100% - 2 * #{$sidebar-width}
-  min-height: calc(100vh - #{$navbar-height}
+  width: calc(100% - 2 * #{$sidebar-width} - 2rem)
+  min-height: calc(100vh - #{$navbar-height} - 2rem)
   margin: 0 auto
   padding: $navbar-height 0 2rem
   display: flex
   justify-content: center
   align-items: center
-  box-sizing: border-box
+  box-sizing: content-box
 
 @media screen and (max-width: 1366px)
   .full-height-container
     padding-top: $navbar-height-laptop
-    width: calc(100% - 2 * #{$sidebar-width-laptop}
-    min-height: calc(100vh - #{$navbar-height-laptop}
+    width: calc(100% - 2 * #{$sidebar-width-laptop} - 2rem)
+    min-height: calc(100vh - #{$navbar-height-laptop} - 2rem)
 
 @media #{$tablet-media}
   .full-height-container
     padding-top: $navbar-height-tablet
-    width: calc(100% - 2 * #{$sidebar-width-tablet}
-    min-height: calc(100vh - #{$navbar-height-tablet}
+    width: calc(100% - 2 * #{$sidebar-width-tablet} - 2rem)
+    min-height: calc(100vh - #{$navbar-height-tablet} - 2rem)
 
 @media #{$mobile-media}
   .full-height-container
-    width: 100%
+    width: calc(100% - 2rem)
     padding-left: 1rem
     padding-right: 1rem

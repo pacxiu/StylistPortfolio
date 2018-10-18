@@ -1,2 +1,19 @@
 html
   font-size: 10px
+
+  // 27 inch
+  @media screen and (min-width: 2559px)
+    font-size: 14px
+  // 4kHD
+  @media screen and (min-width: 3839px)
+    font-size: 21px
+
+  @media screen and (max-width: 1600px)
+    font-size: 9px
+
+  // end desktop
+  @media #{$small-desktop-media}
+    font-size: 8.5px
+
+  @media #{$tablet-media}
+    font-size: 8px

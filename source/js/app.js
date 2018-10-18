@@ -130,7 +130,19 @@ var ProjectModule = (function($) {
       arrows: false,
       dots: true,
       swipeToSlide: true,
-      variableWidth: true
+      variableWidth: true,
+      autoplay: false,
+      responsive: [
+        {
+          breakpoint: 461,
+          settings: {
+            slidesToShow: 1,
+            variableWidth: false,
+            centerMode: true,
+            centerPadding: '30px'
+          }
+        }
+      ]
     })
   }
 
