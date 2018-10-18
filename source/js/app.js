@@ -1,6 +1,15 @@
 var MainModule = (function($) {
+  var _menuHandler = function _menuHandler() {
+    var menuTrigger = $('.js-menu-open')
+    var mobileMenu = $('.menu-list')
+
+    menuTrigger.on('click', function() {
+      mobileMenu.toggleClass('is-open')
+    })
+  }
+
 	var init = function init() {
-		console.log('Hello world');
+		_menuHandler();
 	};
 
 	return {
@@ -21,8 +30,6 @@ var ContactModule = (function($) {
       subject = form.find('[name=subject]')
       message = form.find('[name=message]'),
       isok = true;
-
-    console.log(name.val());
 
     if ( name.val() === '') {
       name.addClass('error-validate');

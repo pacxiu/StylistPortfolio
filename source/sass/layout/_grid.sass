@@ -3,8 +3,26 @@
   min-height: calc(100vh - #{$navbar-height}
   height: 100%
   margin: 0 auto
-  padding: $navbar-height 2rem 2rem
+  padding: $navbar-height 0 2rem
   display: flex
   justify-content: center
   align-items: center
   box-sizing: border-box
+
+@media screen and (max-width: 1366px)
+  .full-height-container
+    padding-top: $navbar-height-laptop
+    width: calc(100% - 2 * #{$sidebar-width-laptop}
+    min-height: calc(100vh - #{$navbar-height-laptop}
+
+@media #{$tablet-media}
+  .full-height-container
+    padding-top: $navbar-height-tablet
+    width: calc(100% - 2 * #{$sidebar-width-tablet}
+    min-height: calc(100vh - #{$navbar-height-tablet}
+
+@media #{$mobile-media}
+  .full-height-container
+    width: 100%
+    padding-left: 2rem
+    padding-right: 2rem

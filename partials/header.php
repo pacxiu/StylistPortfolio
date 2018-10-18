@@ -37,6 +37,9 @@
         <li class="menu-item<?php if($pg=='experiance') { ?> active<?php } ?>"><a class="menu-link" href="./experiance.php">Experiance</a></li>
         <li class="menu-item positioned<?php if($pg=='contact') { ?> active<?php } ?>"><a class="menu-link" href="./contact.php">Contact</a></li>
       </ul>
+      <div id="menu-trigger" class="js-menu-open">
+        Hamburger
+      </div>
     </nav>
     
 

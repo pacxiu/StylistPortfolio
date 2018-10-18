@@ -20,11 +20,13 @@
   left: 0
   right: 0
   position: fixed
-  background-color: blue
   height: $navbar-height
   display: flex
   align-items: center
   z-index: 10
+
+#menu-trigger
+  display: none
 
 .menu-list
   display: flex
@@ -48,14 +50,12 @@
   align-items: center
   justify-content: center
   position: fixed
-  background-color: red
   top: 0
   bottom: 0
   left: 0
   width: $sidebar-width
 
 .positioned
-  background-color: green
   right: 0
   left: auto
   margin-right: 0
@@ -70,3 +70,53 @@
   text-align: center
   white-space: nowrap
   font-weight: bold
+
+@media screen and (max-width: 1366px)
+  .logotype-container, .positioned
+    width: $sidebar-width-laptop
+
+  #menu
+    height: $navbar-height-laptop
+
+@media #{$tablet-media}
+  .logotype-container, .positioned
+    width: $sidebar-width-tablet
+
+  #menu
+    height: $navbar-height-tablet
+    font-size: 1.8rem
+
+@media #{$mobile-media}
+  #menu
+    padding: 0 2rem
+    justify-content: space-between
+
+  .logotype-container, .positioned
+    position: relative
+    width: auto
+    display: block
+
+  .logotype, .positioned .menu-link
+    transform: none
+
+  .menu-list
+    background: #fff
+    position: fixed
+    bottom: 0
+    left: 0
+    right: 0
+    top: $navbar-height-tablet
+    flex-direction: column
+    transition: 0.75s ease-in-out
+    transform: translateY(100%)
+
+    &.is-open
+      transform: translateY(0)
+
+  .menu-item
+    margin: 0 auto 2em
+    width: 100%
+    text-align: center
+
+  #menu-trigger
+    display: block

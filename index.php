@@ -11,12 +11,12 @@
         // display thumbnails for all projects
         $directory = "./img/thumbnails/";
         $filecount = count(glob($directory."*"));
-        for ($i = 1; $i <= $filecount; $i++)
+        for ($i = 1; $i <= 23; $i++)
         
         echo 
         "<a href='$files/project.php?id=$i' class='portfolio-item'>
           <div class='portfolio-hint'>click to see project details</div>
-          <img src='$assets/img/thumbnails/project_$i.jpg' >
+          <img src='$assets/img/thumbnails/project_1.jpg' >
         </a>"
       ?>
     </div>
