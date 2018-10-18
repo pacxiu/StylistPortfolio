@@ -125,7 +125,7 @@ var ProjectModule = (function($) {
 
     slider.slick({
       infinite: false,
-      slidesToShow: 2,
+      slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
       dots: true,
@@ -136,7 +136,6 @@ var ProjectModule = (function($) {
         {
           breakpoint: 461,
           settings: {
-            slidesToShow: 1,
             variableWidth: false,
             centerMode: true,
             centerPadding: '30px'
