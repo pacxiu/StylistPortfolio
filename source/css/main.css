@@ -21,7 +21,6 @@ p {
 .full-height-container {
   width: calc(100% - 2 * 16rem);
   min-height: calc(100vh - 8.5rem);
-  height: 100%;
   margin: 0 auto;
   padding: 8.5rem 0 2rem;
   display: -webkit-box;
@@ -72,6 +71,12 @@ html {
     left: 0;
     -webkit-transform: translate(-175%, -50%);
             transform: translate(-175%, -50%); }
+
+@media screen and (max-width: 768px) {
+  .dot-list li:before {
+    top: 0;
+    -webkit-transform: translate(-175%, 0.35em);
+            transform: translate(-175%, 0.35em); } }
 
 .contact-title {
   text-align: center;
@@ -166,6 +171,16 @@ html {
   #sending.is-visible, #thank-you.is-visible, #error.is-visible {
     display: block; }
 
+@media screen and (max-width: 1024px) {
+  .contact-title, .contact-data {
+    font-size: 2.2rem; } }
+
+@media screen and (max-width: 768px) {
+  .contact-title, .contact-data {
+    font-size: 2rem; }
+  #contact-form {
+    margin-top: 4rem; } }
+
 .experiance-container .spacer {
   margin-bottom: 6rem; }
 
@@ -175,6 +190,12 @@ html {
 .date-begin {
   width: 2.6em;
   display: inline-block; }
+
+@media screen and (max-width: 768px) {
+  .experiance-container .dot-list {
+    padding-left: 2rem; }
+  .experiance-container .spacer {
+    margin-bottom: 3rem; } }
 
 #portfolio {
   -webkit-box-pack: start;
