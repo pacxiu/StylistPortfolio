@@ -297,8 +297,34 @@ html {
   max-width: 99.5%;
   margin: 0 auto; }
 
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.project-description-container {
+  min-width: 20em;
+  padding: 1em;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .project-description {
-  min-width: 20em; }
+  color: #c6c6c6;
+  font-size: 1.8rem;
+  font-weight: 600; }
+  .project-description p {
+    color: inherit; }
+
+.magazine {
+  font-size: 1.3em;
+  text-transform: uppercase; }
 
 .slick-dots {
   display: -webkit-box;
@@ -335,7 +361,7 @@ html {
     margin-bottom: 0px !important; } }
 
 @media screen and (max-width: 459px) {
-  .project-description {
+  .project-description-container {
     min-width: 10em; }
   .project-image {
     min-height: 40rem;
