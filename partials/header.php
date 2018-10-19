@@ -48,6 +48,7 @@
         </svg>
         </div>
     </div>
+    <div id="loader-helper"></div>
     <nav id="menu">
       <div class="logotype-container">
         <a class="logotype" href="./index.php">Sylwia Morawska Stylist</p>

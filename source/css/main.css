@@ -396,8 +396,8 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out; }
+  -webkit-transition: z-index 1.4s step-end;
+  transition: z-index 1.4s step-end; }
 
 .pace {
   pointer-events: none;
@@ -405,7 +405,7 @@ p {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  z-index: 2000;
+  z-index: 21;
   position: fixed;
   margin: auto;
   top: 0;
@@ -416,7 +416,9 @@ p {
   width: 30rem;
   border-radius: 1rem;
   border: 1px solid #fff;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-transition: z-index 1.4s step-end;
+  transition: z-index 1.4s step-end; }
 
 .pace .pace-progress {
   -webkit-box-sizing: border-box;
@@ -452,14 +454,51 @@ p {
   width: 30rem;
   height: 30rem;
   max-width: 100%;
-  -webkit-animation: rotate 6s infinite linear;
-          animation: rotate 6s infinite linear; }
+  -webkit-animation: rotate 5s infinite linear;
+          animation: rotate 5s infinite linear; }
 
 #circle {
   top: -4rem; }
 
 .pace {
   top: 34rem; }
+
+#loader-helper {
+  display: block;
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  z-index: 22;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: z-index 1.4s step-end, -webkit-transform 1.2s 0.2s ease-in-out;
+  transition: z-index 1.4s step-end, -webkit-transform 1.2s 0.2s ease-in-out;
+  transition: transform 1.2s 0.2s ease-in-out, z-index 1.4s step-end;
+  transition: transform 1.2s 0.2s ease-in-out, z-index 1.4s step-end, -webkit-transform 1.2s 0.2s ease-in-out; }
+
+#menu, .full-height-container {
+  opacity: 0;
+  -webkit-transition: 1s 1.4s ease-in-out;
+  transition: 1s 1.4s ease-in-out; }
+
+#menu {
+  -webkit-transition-delay: 2.3s;
+          transition-delay: 2.3s; }
+
+.pace-done #loader-helper {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  z-index: -1; }
+
+.pace-done .pace, .pace-done #loader {
+  z-index: -2; }
+
+.pace-done #menu, .pace-done .full-height-container {
+  opacity: 1; }
 
 @-webkit-keyframes rotate {
   0% {
