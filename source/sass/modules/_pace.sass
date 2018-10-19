@@ -1,0 +1,76 @@
+// body.pace-running
+//   background: red
+
+#loader
+  display: flex
+  +position(fixed, 0 0 0 0)
+  background: url(../../img/loader_bg.jpg) center center no-repeat
+  background-size: cover
+  z-index: 20
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: 0.5s ease-in-out
+
+.pace
+  pointer-events: none
+  user-select: none
+  z-index: 2000
+  position: fixed
+  margin: auto
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  height: rem(10)
+  width: rem(300)
+  border-radius: rem(10)
+  border: 1px solid #fff
+  overflow: hidden
+
+.pace .pace-progress
+  box-sizing: border-box
+  transform: translate3d(0, 0, 0)
+  position: fixed
+  z-index: 2000
+  display: block
+  position: absolute
+  top: 0
+  right: 100%
+  height: 100%
+  width: 100%
+  background: #fff
+
+.pace.pace-inactive
+  display: block
+
+#circle
+  position: relative
+  width: 100%
+  overflow: hidden
+  text-align: center
+
+#circle text
+  font-size: 22px
+  font-weight: bold 
+  text-transform: uppercase
+  color: #fff
+
+#circle svg 
+  width: rem(300)
+  height: rem(300)
+  max-width: 100%
+  animation: rotate 6s infinite linear
+
+#circle
+  top: rem(-40)
+
+.pace
+  top: rem(340)
+
+@keyframes rotate 
+  0% 
+    transform: rotate(360deg) 
+  100%
+    transform: rotate(0) 
+

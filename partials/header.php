@@ -10,6 +10,9 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="<?php echo $assets; ?>/dist/css/normalize.css">
 
+    <!-- PACE -->
+    <script type="text/javascript" src="<?php echo $assets; ?>/dist/js/pace.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
     
@@ -26,7 +29,24 @@
   </head>
   <body>
     <div id="loader">
-      <div class="loader-container">Progressbar here</div>
+      <div id="circle">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+            <defs>
+              <path id="circlePath" d=" M 150, 150 m -120, 0 a 60,60 0 0,1 240,0 a 60,60 0 0,1 -240,0 "/>
+            </defs>
+            <circle cx="150" cy="150" r="150" fill="none"/>
+            <g>
+              <use xlink:href="#circlePath" fill="none"/>
+              <text fill="#fff">
+                <textPath xlink:href="#circlePath">
+                  Sylwia&nbsp;&nbsp;&nbsp;Morawska
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  Stylist
+                </textPath>
+              </text>
+            </g>
+        </svg>
+        </div>
     </div>
     <nav id="menu">
       <div class="logotype-container">
