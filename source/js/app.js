@@ -136,9 +136,7 @@ var ProjectModule = (function($) {
         {
           breakpoint: 461,
           settings: {
-            variableWidth: false,
-            centerMode: true,
-            centerPadding: '30px'
+            variableWidth: false
           }
         }
       ]

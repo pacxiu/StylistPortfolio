@@ -9,14 +9,14 @@
     <div class="portfolio-container">
       <?php
         // display thumbnails for all projects
-        $directory = "./img/thumbnails/";
+        $directory = "./img/projects/";
         $filecount = count(glob($directory."*"));
-        for ($i = 1; $i <= 23; $i++)
+        for ($i = 1; $i <= $filecount; $i++)
         
         echo 
         "<a href='$files/project.php?id=$i' class='portfolio-item'>
-          <div class='portfolio-hint'>click to see view details</div>
-          <img src='$assets/img/thumbnails/project_1.jpg' >
+          <div class='portfolio-hint'>click to view project</div>
+          <img src='$assets/img/projects/".$i."/1.jpg' >
         </a>"
       ?>
     </div>

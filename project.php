@@ -17,8 +17,17 @@
 
           require_once $root.$files.'/partials/project_description.php';
 
-          for ($i = 1; $i <= $filecount; $i++)
-            echo "<div class='project-slide'><img class='project-image' src='$directory$i.jpg'></div>";
+          for ($i = 1; $i <= $filecount - 1; $i++) {
+            $imgSrc = $directory.$i.'.jpg';
+            list($width, $height) = getimagesize($imgSrc);
+
+            // check if image is horizontal or vertical            
+            if ($height < 578) {
+              echo "<div class='project-slide'><img class='project-image horizontal' src='$imgSrc'></div>";
+            } else {
+              echo "<div class='project-slide'><img class='project-image' src='$imgSrc'></div>";
+            }
+          }
           
           require_once $root.$files.'/partials/project_other.php';
 

@@ -1,6 +1,13 @@
 .stories-thumbnails-container
   padding-left: 5em
 
+  .portfolio-item
+    display: flex
+    align-items: center
+
+  .portfolio-hint
+    padding: 0.5em
+
 .stories-title
   font-weight: bold
   font-size: 4rem
@@ -26,6 +33,9 @@
   color: $accent-gray
   font-weight: 600
 
+  &:hover .back-arrow
+    box-shadow: 1px 1px 5px $accent-gray
+
 .back-arrow
   +size(5rem)
   margin: 0 auto 0.25em
@@ -41,14 +51,17 @@
     margin: 0 auto
     transform: translateX(-10%)
 
-  &:hover
-    box-shadow: 0 0 3px $accent-gray
-
 @media screen and (max-width: 1660px)
   .stories-thumbnails
     max-width: 21em
 
 @media #{$tablet-media}
+  .other-stories
+    margin: 0 auto
+
+  .stories-thumbnails-container
+    padding-left: 1em
+
   .stories-thumbnails
     max-width: 23em
 
