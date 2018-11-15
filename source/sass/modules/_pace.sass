@@ -1,16 +1,12 @@
-// body.pace-running
-//   background: red
-
 #loader
   display: flex
   +position(fixed, 0 0 0 0)
-  background: url(../../img/loader_bg.jpg) center center no-repeat
+  background: #fff
   background-size: cover
   z-index: 20
   display: flex
   align-items: center
   justify-content: center
-  transition: z-index 1.4s step-end
 
 .pace
   pointer-events: none
@@ -25,11 +21,10 @@
   height: rem(10)
   width: rem(300)
   border-radius: rem(10)
-  border: 1px solid #fff
+  border: 1px solid #000
   overflow: hidden
-  transition: z-index 1.4s step-end
 
-.pace .pace-progress
+.pace-progress
   box-sizing: border-box
   transform: translate3d(0, 0, 0)
   position: fixed
@@ -40,7 +35,7 @@
   right: 100%
   height: 100%
   width: 100%
-  background: #fff
+  background: #000
 
 .pace.pace-inactive
   display: block
@@ -55,7 +50,7 @@
   font-size: 22px
   font-weight: bold 
   text-transform: uppercase
-  color: #fff
+  fill: #000
 
 #circle svg 
   width: rem(300)
@@ -71,26 +66,56 @@
 
 // =========== LOADING ANIMATION =============
 // animate when loaded, hide other content
-#loader-helper
-  display: block
-  content: ''
-  +position(fixed, 0 0 0 0)
-  background: #fff
-  z-index: 22
-  transform: translateY(100%)
-  transition: transform 1.2s 0.2s ease-in-out, z-index 1.4s step-end
+// separate animation for index and other websites
+.index
+  #circle text
+    fill: #fff
+
+  .pace
+    border: 1px solid #fff
+
+  .pace-progress
+    background: #fff
+
+  #loader
+    background: url(../../img/loader_bg.jpg) center center no-repeat
+
+  #loader-helper
+    display: block
+    content: ''
+    +position(fixed, 0 0 0 0)
+    background: #fff
+    z-index: 22
+    transform: translateY(100%)
+    transition: transform 1.2s 0.2s ease-in-out, z-index 1.4s step-end
+  
+  #loader
+    transition: z-index 1.4s step-end
+
+  .pace
+    transition: z-index 1.4s step-end
+
+  #menu, .full-height-container
+    transition: opacity 1s 1.4s ease-in-out
+
+#loader
+  transition: z-index 0.75s step-end
+
+.pace
+  transition: z-index 0.75s step-end
 
 #menu, .full-height-container
   opacity: 0
-  transition: 1s 1.4s ease-in-out
-
-#menu
-  transition-delay: 2.3s
+  transition: opacity 1s 0.75s ease-in-out
 
 .pace-done
-  #loader-helper
-    transform: translateY(0)
-    z-index: -1
+  &.index
+    #menu
+      transition-delay: 2.3s
+
+    #loader-helper
+      transform: translateY(0)
+      z-index: -1
 
   .pace, #loader
     // transform: translateY(-100vh)
@@ -98,6 +123,8 @@
 
   #menu, .full-height-container
     opacity: 1
+
+
 
 @keyframes rotate 
   0% 

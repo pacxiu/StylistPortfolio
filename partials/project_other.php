@@ -8,7 +8,7 @@
 
           echo 
           "<a href='$files/project.php?id=$i' class='portfolio-item'>
-            <div class='portfolio-hint'>click to see project details</div>
+            <div class='portfolio-hint'>click to view project</div>
             <img src='$assets/img/thumbnails/project_1.jpg' >
           </a>"
         ?>
