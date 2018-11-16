@@ -231,7 +231,9 @@ p {
           justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start; }
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .portfolio-container {
   display: -webkit-box;
@@ -243,6 +245,12 @@ p {
       -ms-flex-align: center;
           align-items: center;
   width: 100%; }
+
+.assistant {
+  font-weight: 700;
+  text-align: center;
+  margin: 2em auto;
+  text-transform: uppercase; }
 
 .portfolio-item {
   position: relative;
@@ -302,6 +310,9 @@ p {
   height: 100%;
   overflow: hidden; }
 
+.no-project {
+  text-align: center; }
+
 .project-slide {
   outline: none; }
 
@@ -340,10 +351,17 @@ p {
     margin-bottom: 0.15em; }
 
 .magazine {
+  font-size: 1.05em;
+  text-transform: uppercase; }
+
+.title {
   font-size: 1.3em;
   text-transform: uppercase;
   font-weight: 600;
-  margin-bottom: 0.25em; }
+  color: #8A8A8A; }
+
+.photo {
+  margin-top: 1.5em; }
 
 .slick-dots {
   display: -webkit-box;
