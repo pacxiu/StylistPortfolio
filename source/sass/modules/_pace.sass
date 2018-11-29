@@ -79,6 +79,7 @@
 
   #loader
     background: url(../../img/loader_bg.jpg) center center no-repeat
+    background-size: cover
 
   #loader-helper
     display: block
@@ -87,16 +88,16 @@
     background: #fff
     z-index: 22
     transform: translateY(100%)
-    transition: transform 1.2s 0.2s ease-in-out, z-index 1.4s step-end
+    transition: transform 1.2s 1.2s cubic-bezier(0.75, 0.05, 0, 1), z-index 2.4s step-end
   
   #loader
-    transition: z-index 1.4s step-end
+    transition: z-index 2.4s step-end
 
   .pace
-    transition: z-index 1.4s step-end
+    transition: z-index 2.4s step-end
 
   #menu, .full-height-container
-    transition: opacity 1s 1.4s ease-in-out
+    transition: opacity 1s 2.6s ease-in-out
 
 #loader
   transition: z-index 0.75s step-end
@@ -111,7 +112,7 @@
 .pace-done
   &.index
     #menu
-      transition-delay: 2.3s
+      transition-delay: 3.3s
 
     #loader-helper
       transform: translateY(0)
@@ -123,8 +124,6 @@
 
   #menu, .full-height-container
     opacity: 1
-
-
 
 @keyframes rotate 
   0% 

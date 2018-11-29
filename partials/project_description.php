@@ -13,10 +13,11 @@
       'title' => "Chapter 2",
       'photo' => "Maria Cieślak",
       'model' => "Carla/ United for Models",
-      'make up' => "Aleksandra Przyłusk"
+      'make up' => "Aleksandra Przyłuska"
     ),
     '3' => array(
-      'magazine' => "Design Scen",
+      'title' => 'Julia',
+      'magazine' => "Design Scene",
       'photo' => "Łukasz Kuś",
       'model' => "Julia Śmigielska",
       'make up' => "Anna Stykała",
@@ -28,13 +29,13 @@
     ),
     '4' => array(
       'title' => "Lolpolonia",
-      'magazine' => "FGUK Magazin",
+      'magazine' => "FGUK Magazine",
       'photo' => "Jan Wasiuchnik",
       'model' => "Lolita/ A S Management",
       'make up' => "Victoria Kalinichenko"
     ),
     '5' => array(
-      'title' => "Kampania dla farb Renesans",
+      'title' => "Campaign for Renesans paint",
       'photo' => "Ula Kóska",
       'model' => "Joanna",
       'make up' => "Daria Mierzwa"
@@ -78,12 +79,13 @@
         <p>stylist assistants: Sylwia Morawska, Ewelina Droździuk</p>
         <p>make up: Dorota Kumosińska</p>
         <p>hair: Hubert Sygut</p>
-        <p>photo assistant: Hubert Sygu</p>
+        <p>photo assistant: Hubert Sygut</p>
       "
     ),
     '9' => array(
       'magazine' => "Glamour",
       'photo' => "Zuza Krajewska",
+      'model' => "Osi/ Chili Models, Karolina, Radek/ Panda Models, Jakob/ AS Management",
       'stylist' => "Michał Kuś",
       'assistant' => array(
         'type' => 'stylist assistants',
@@ -103,11 +105,12 @@
         <p>stylist assistants: Sylwia Morawska, Ewelina Droździuk</p>
         <p>make up: Iza Kućmierowska</p>
         <p>hair: Aleksandra Płużyńska</p>
-        <p>photo: assistant Tomasz Wirsk</p>
+        <p>photo: assistant Tomasz Wirski</p>
       "
     ),
     '11' => array(
-      'photo' => "Natalia",
+      'title' => 'Test',
+      'photo' => "Natalia Erdman",
       'model' => "Anya, Mateusz/ Uncover Models"
     ),
     '12' => array(
@@ -121,25 +124,22 @@
       'magazine' => "Hiro",
       'photo' => "Miron Chomacki",
       'model' => "Iza/ United for Models",
-      'stylist' => "Sylwia Morawska",
       'make up' =>"Daria Urban",
       'hair' => "Karolina Kowalska"
     ),
     '14' => array(
       'title' => "Iza",
-      'magazine' => "C-heads Magazin",
+      'magazine' => "C-heads Magazine",
       'photo' => "Miron Chomacki",
       'model' => "Iza/ United for Model",
-      'stylist' => "Sylwia Morawsk",
-      'make up' => "Daria Urba",
-      'hair' => "Karolina Kowalsk"
+      'make up' => "Daria Urban",
+      'hair' => "Karolina Kowalska"
     ),
     '15' => array(
       'title' => "Melancholia",
       'magazine' => "Perjus Magazine",
       'photo' => "Ula Kóska",
       'model' => "Kasia/ United for Models",
-      'stylist' => "Sylwia Morawska",
       'make up'=> "Anna Bułkowska",
       'hair' => "Trendy Hair Fashion"
     ),
@@ -148,7 +148,6 @@
       'magazine' => "Elegant Magazine",
       'photo' => "Justyna Rząca",
       'model' => "Kate/ Indeed Models Berlin",
-      'stylist' => "Sylwia Morawska",
       'make up'=> "Anna Bułkowska",
       'designer'=> "Anna Tkacz"
     ),
@@ -157,7 +156,6 @@
       'magazine' => "MODO Magazine",
       'photo' => "Wittkowstein & Gardaś",
       'model' => "Oliwia/ D'Vision",
-      'stylist' => "Sylwia Morawska",
       'make up' => "Koleta Gabrysiak"
     ),
     '18' => array(
@@ -165,7 +163,6 @@
       'magazine' => "BE Magazine",
       'photo' => "Kamil Bogdański",
       'model' => "Dominika/ More Models",
-      'stylist' => "Sylwia Morawska",
       'make up' => "Łukasz Bier",
       'hair' => "Thomas Gain"
     ),
@@ -173,24 +170,18 @@
       'title' => "Kate",
       'magazine' => "Kaltblut",
       'photo' => "Mateusz Hajman",
-      'model' => "Kate/ Indeed Models Berlin",
-      'stylist' => "Sylwia Morawska"
+      'model' => "Kate/ Indeed Models Berlin"
     ),
     '20' => array(
       'magazine' => "Obvious Magazine",
       'photo' => "Ann Czerny",
       'model' => "Gabrysia Przeorska / Mango Models",
-      'make up' => "Patrycja Piechówka",
-      'stylist' => "Sylwia Morawska",
-      'custom' => "
-        <p>fashion delivered by Showroom Alterno</p>
-      "
+      'make up' => "Patrycja Piechówka"
     ),
     '21' => array(
-      'title' => "Michał, tests",
+      'title' => "Test",
       'photo' => "Ann Czerny",
       'model' => "Michał/ AS Management",
-      'stylist' => "Sylwia Morawska",
       'make up'=> "Honorata Pawlak",
       'hair' => "Chmiest Academy of Hair Design"
     ),
@@ -199,7 +190,6 @@
       'magazine' => "Design Scene",
       'photo' => "Ann Czerny",
       'model' => "Kasia/ United for Models",
-      'stylist' => "Sylwia Morawska",
       'make up'=> "Anna Stykała",
       'hair'=> "Anna Stykała"
     ),
@@ -208,7 +198,6 @@
       'magazine' => "Hiro",
       'photo' => "Ann Czerny",
       'model' => "Klaudia/ Rebel Models",
-      'stylist' => "Sylwia Morawska",
       'make up'=> "Aga Karolak",
       'hair' => "Anna Rozkosz"
     ),
@@ -217,7 +206,7 @@
       'magazine' => "Kaltblut",
       'photo' => "Ann Czerny",
       'model' => "Dominika/ D'Vision, Daniel/ AS Management",
-      'stylist' => "Sylwia Morawska",
+      'hair' => "Paulina Michalska",
       'make up' => "Sylwia Chlebek"
     ),
     '25' => array(
@@ -225,7 +214,6 @@
       'magazine' => "Cliche Paris",
       'photo' => "Ann Czerny",
       'model' => "Dominika/ D'vision",
-      'stylist' => "Sylwia Morawska",
       'make up' => "Patrycja Piechówka",
       'hair' => "Patrycja Piechówka"
     )

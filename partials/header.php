@@ -55,7 +55,7 @@
       </div>
       <ul class="menu-list">
         <li class="menu-item<?php if($pg=='index') { ?> active<?php } ?>"><a class="menu-link" href="./index.php">Portfolio</a></li>
-        <li class="menu-item<?php if($pg=='experience') { ?> active<?php } ?>"><a class="menu-link" href="./experience.php">Experience</a></li>
+        <li class="menu-item<?php if($pg=='about') { ?> active<?php } ?>"><a class="menu-link" href="./about.php">About</a></li>
         <li class="menu-item positioned<?php if($pg=='contact') { ?> active<?php } ?>"><a class="menu-link" href="./contact.php">Contact</a></li>
       </ul>
       <div id="menu-trigger" class="js-menu-open">

@@ -6,7 +6,7 @@
   
   // check if in production
   if ($serverName !== 'localhost') {
-    $mainFolder = '/PROJECTS/SylwiaPortfolio';
+    $mainFolder = '';
   }
 
   // path for all of assets (img, css, js)
