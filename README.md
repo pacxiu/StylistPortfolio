@@ -1,4 +1,5 @@
-# siteStarter
+# Sylwia Morawska Stylist
 
-Site with gulp task runner. Configured with sass, ejs, autoprefixer and browsersync also containts js and css minification. 
-Just use -npm install.
+Portfolio for our stylist friend using HTML/CSS(SASS)/JS and little bit of PHP.
+
+### Live version - http://smorawska.pl/
