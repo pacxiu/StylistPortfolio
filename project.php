@@ -1,7 +1,7 @@
 <?php require_once './config.php'; 
   $projectId = $_GET['id'];
   $pageTitle = "Sylwia Morawska Stylist | Project";
-  $pageDescription = "Project description";
+  $pageDescription = "Detailed description of one from many Sylwia Morawska Stylist's projects.";
 ?>
 
 <?php require_once $root.$files.'/partials/header.php'; ?>
