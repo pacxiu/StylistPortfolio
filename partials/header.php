@@ -26,6 +26,16 @@
 
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130091995-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-130091995-1');
+    </script>
   </head>
   <body class="<?php if($pg=='index') { ?>index<?php } ?>">
     <div id="loader">

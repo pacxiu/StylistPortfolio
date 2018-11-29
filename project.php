@@ -1,6 +1,6 @@
 <?php require_once './config.php'; 
   $projectId = $_GET['id'];
-  $pageTitle = "Project";
+  $pageTitle = "Sylwia Morawska Stylist | Project";
   $pageDescription = "Project description";
 ?>
 

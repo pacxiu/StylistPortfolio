@@ -1,6 +1,6 @@
 <?php require_once './config.php'; 
-	$pageTitle = "Portfolio";
-	$pageDescription = "Portfolio description";
+	$pageTitle = "Sylwia Morawska Stylist | Portfolio";
+	$pageDescription = "Sylwia Morawska Stylist Portfolio. Consists of her stylisations in the magazines: L'Officiel, Glamour, C-heads, Design Scene, Hiro, Vanity Teen, Fashion Magazine, Lucy's, Obvious, and Flanelle and videos.";
 ?>
 
 <?php require_once $root.$files.'/partials/header.php'; ?>

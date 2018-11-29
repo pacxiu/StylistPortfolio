@@ -1,6 +1,6 @@
 <?php require_once './config.php'; 
-	$pageTitle = "Contact";
-	$pageDescription = "Contact description";
+	$pageTitle = "Sylwia Morawska Stylist | Contact";
+	$pageDescription = "Sylwia Morawska Stylist contact details, email: stylist@smorawska.pl, facebook: https://www.facebook.com/Inomodnie/, instagram: https://www.instagram.com/morafka_/";
 ?>
 
 <?php require_once $root.$files.'/partials/header.php'; ?>
@@ -30,7 +30,7 @@
       </a>
 
       <a target="_blank" href="https://www.instagram.com/morafka_/">
-        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <svg version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            width="49.652px" height="49.652px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;"
            xml:space="preserve">
         <g>
