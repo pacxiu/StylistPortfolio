@@ -8,7 +8,7 @@
 
   <div class="full-height-container" id="project">
     <div class="project-container">
-      <?php if ($projectId > 0 && $projectId < 26) {
+      <?php if ($projectId > 0 && $projectId < 28) {
           // display all images from project folder
           $directory = "./img/projects/".$projectId."/";
           $filecount = count(glob($directory."*"));

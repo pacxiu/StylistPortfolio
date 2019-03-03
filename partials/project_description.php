@@ -216,6 +216,21 @@
       'model' => "Dominika/ D'vision",
       'make up' => "Patrycja Piechówka",
       'hair' => "Patrycja Piechówka"
+    ),
+    '26' => array(
+      'title' => "All over the world",
+      'magazine' => "L'Officiel Argentina",
+      'photo' => "Agata Serge",
+      'model' => "Joli/ MILK",
+      'make up' => "Anna Sokołowska"
+    ),
+    '27' => array(
+      'title' => "Be dreamer",
+      'magazine' => "Flanelle Magazine",
+      'photo' => "Helena Bromboszcz",
+      'model' => "Nika/ Uncover Models",
+      'make up' => "Katarzyna Olowska",
+      'hair' => "Katarzyna Olowska"
     )
   );
 ?>

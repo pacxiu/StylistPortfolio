@@ -8,7 +8,7 @@
   <div class="full-height-container" id="portfolio">
     <div class="portfolio-container">
       <?php
-        $queryProjects = [20, 11, 13, 12, 4, 23, 18, 1, 14, 2, 21, 16, 22, 17, 15, 25, 19, 3, 5, 24];
+        $queryProjects = [26, 20, 11, 13, 27, 12, 4, 23, 18, 1, 14, 2, 21, 16, 22, 17, 15, 25, 19, 3, 5, 24];
 
         $directory = "./img/projects/";
         // $filecount = count(glob($directory."*"));
